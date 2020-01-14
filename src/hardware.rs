@@ -1,13 +1,15 @@
 pub const PROG_MEM_START: u16 = 0x200;
 pub const RESERVED_MEM_START: u16 = 0xEA0;
 pub const DISPLAY_MEM_START: u16 = 0xF00;
+pub const DISPLAY_MAX_X: u8 = 0x3F;
+pub const DISPLAY_MAX_Y: u8 = 0x1F;
 
 pub struct Keyboard {
 
 }
 
 pub struct Display {
-
+    pub pixels: [[u8; 0x1F]; 0x3F]
 }
 
 pub struct CPU {
